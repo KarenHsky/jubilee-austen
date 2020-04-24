@@ -1,0 +1,194 @@
+/*****BASE STYLES*****/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#2b2b2b;
+}
+
+#about, #work, #contact {
+    height: 600px;
+}
+
+/*****GRID*****/
+/*Get width measurements from Photoshop comp design.
+Full-width margin in 0 because each section stacks flush on top of one another
+Specifying auto as the second parameter basically tells the browser to automatically determine the left and right margins itself, which it does by setting them equally. 
+It guarantees that the left and right margins will be set to the same size. The first parameter 0 indicates that the top and bottom margins will both be set to 0.*/
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/*****HEADER*****/
+
+header {
+    height: 800px;
+    background: url(../img/background-clipping-mask.png);
+    background-size: cover;
+}
+
+header h1 {
+    color: #bbc085;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    margin: 75px 0 0 25px; /*I added this to get it in line with nav and h2*/
+    /*padding: 65px 0 65px 25px; */
+}
+
+nav {
+    float: right; 
+    padding: 75px 25px;  /*Where do they get these padding values from?*/
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 80px;
+}
+
+header h2 {
+    clear: both;
+    color: #9b9b9b;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    padding: 20px 0 20px 25px;
+    width: 1000px;
+}
+
+header h2 span {
+    color: #2b2b2b;
+}
+
+
+/*****ABOUT*****/
+/*Specify more specs for .full-width that only apply to the About section
+Not sure where they got the padding px from: 80px of padding on top and bottom and no padding on either side*/
+
+#about .full-width {
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-left: 50px;
+}
+
+#about p {
+    color: #7f7f7f;
+    font-size: 21px;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*****WORK*****/
+
+#work {
+    background: #f9ceb7;
+    text-align: center; /*putting this here aligns everything in this section to center, including images*/
+}
+
+#work .full-width {
+    padding: 115px 0;
+}
+
+#work img {
+    padding-bottom: 30px;
+}
+
+#work h3 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 190px;
+    margin:  0 auto;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 33px;
+    padding: 0 50px;  /*Top and right.  Others omited means they are the same*/
+}
+
+/*****CONTACT*****/
+
+#contact {
+    background: #ebebeb;
+}
+
+#contact .full-width {
+    padding: 110px 0;
+
+}
+
+#contact img#contact-img {
+    margin-left: 25px;
+    border: 12px solid #ffffff;
+}
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+
+#contact #envelope {
+    padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+#contact #email-header {
+    font-size: 32px;
+    font-weight: lighter; /*she used 400*/
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+    font-size: 29px;
+    line-height: 44px;
+    margin: 40px 0 0 0;  /*she had font-weight bold, but it already looks bold*/
+}
+
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+#contact ul {
+    list-style: none; /*Removes bullets*/
+}
+
+#contact ul li {
+    display: inline-block;   /*to display list items horizontally instead of vertically*/
+}
+
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
+}
